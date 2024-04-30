@@ -1,0 +1,38 @@
+const FocoBt = document.querySelector('.app__card-button--foco')
+const CurtoBt = document.querySelector('.app__card-button--descanso-curto')
+const LongoBt = document.querySelector('.app__card-button--descanso-longo')
+const botoes = document.querySelector('.app__card-button')
+const banner = document.querySelector(.app__image') 
+const musicaInput = document.querySelector(#alterar-musica)
+const musica = new Audio('/sons/luna-rise-part-one.mp3')
+musica.loop = true
+
+musicaInput.addEventListener('change', () => {
+	if(musica.paused) {
+	musica.play()}
+	else {
+	musica.pause()}
+})
+
+FocoBt.addEventListener('click', () => {
+	focoBt.classList.add('active')	
+	alterarContexto('foco')
+})
+CurtoBt.addEventListener('click', () => {
+	focoBt.classList.add('active')
+	alterarContexto('descanso-curto')
+})
+LongoBt.addEventListener('click', () => {
+	focoBt.classList.add('active')
+	alterarContexto('descanso-longo')
+})
+
+function alterarContexto (contexto) {
+	botoes.forEach(function(contexto){
+		contexto.classList.remove('active')
+})
+
+html.setAttribute('data-contexto', contexto)
+banner.setAtrribute('src', 'imagens/${contexto}.png')
+
+}

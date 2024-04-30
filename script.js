@@ -11,10 +11,10 @@ const imgBt = document.querySelector('.app__card-primary-butto-icon')
 const tempoNaTela = document.querySelector('#timer')
 
 const musicaInput = document.querySelector('#alternar-musica')
-const musica = new Audio('/sons/luna-rise-part-one.mp3')
- const somIniciar = new Audio('/sons/play.wav')
- const somPausar = new Audio('/sons/pause.mp3')
- const somZerar = new Audio('/sons/beep.mp3')
+const musica = new Audio('./sons/luna-rise-part-one.mp3')
+ const somIniciar = new Audio('./sons/play.wav')
+ const somPausar = new Audio('./sons/pause.mp3')
+ const somZerar = new Audio('./sons/beep.mp3')
 
 musica.loop=true
 

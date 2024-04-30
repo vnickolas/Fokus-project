@@ -100,7 +100,7 @@ function iniciarOuPausar() {
         // somPausar.play() //tocar sempre quando o intervaloId ter algum valor ainda, e quisermos interromper a contagem OBS: tirei pois ficou estranho
     
         iniciarOuPausarBt.textContent = "Retomar" //Informa que se clicar novamente no ADDEVENTLISTENER DO STARPAUSEBT, ele irá retormar a contagem
-        imgBt.setAttribute('src', '/imagens/play_arrow.png');
+        imgBt.setAttribute('src', './imagens/play_arrow.png');
         musicaInput.checked = false; //Desmarca o input de música quando o cronômetro é pausado
         musica.pause()//pausa a música, combinando com a desmarcação do input de música
         return 
@@ -109,7 +109,7 @@ function iniciarOuPausar() {
     intervaloId = setInterval (contagemRegressiva, 1000) //assim, o intervaloId chama a função contagemRegressiva e seta em um intervalo de 1s (1000). Conseguimos setar isso, com o método serInterval ele pede onde vc quer setar esse intervalo e com quantos segundos 
     iniciarOuPausarBt.textContent = "Pausar"; //Quando o cronometro é iniciado, já vai aparecer o label de "pausar"
     musicaInput.checked = true; // Marca o input de música quando o cronômetro é iniciado
-    imgBt.setAttribute('src', '/imagens/pause.png'); //Define a imagem de pausar 
+    imgBt.setAttribute('src', './imagens/pause.png'); //Define a imagem de pausar 
     musica.play() //toca a música, combinando com a marcação do input de música
 }
 

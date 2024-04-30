@@ -7,7 +7,7 @@ const titulo = document.querySelector('.app__title')
 const botoes = document.querySelectorAll('.app__card-button')
 const startPauseBt = document.querySelector('#start-pause')
 const iniciarOuPausarBt = document.querySelector('#start-pause span')
-const imgBt = document.querySelector('.app__card-primary-butto-icon')
+const imgBt = document.querySelector('.app__card-primary-button-icon')
 const tempoNaTela = document.querySelector('#timer')
 
 const musicaInput = document.querySelector('#alternar-musica')
